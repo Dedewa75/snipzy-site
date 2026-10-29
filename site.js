@@ -52,6 +52,12 @@
     }, 650);
   }
 
+
+  /* ---- boutons désactivés : ne font rien ---- */
+  document.querySelectorAll('[aria-disabled="true"]').forEach(function (el) {
+    el.addEventListener("click", function (e) { e.preventDefault(); });
+  });
+
   /* ---- tarifs mensuel / annuel ---- */
   var tg = document.querySelectorAll("[data-bill]");
   if (tg.length) {

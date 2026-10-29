@@ -10,6 +10,7 @@
     $("wait").hidden = true;
     if (!s) { $("boxOut").hidden = false; return; }
     token = s.access_token;
+    var nav = document.getElementById("navAcc"); if (nav) { nav.textContent = "Mon compte"; nav.href = "compte.html"; }
     $("boxIn").hidden = false;
     $("cMail").textContent = (s.user && s.user.email) || "";
     var d = s.user && s.user.created_at ? new Date(s.user.created_at) : null;
