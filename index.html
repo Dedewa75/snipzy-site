@@ -6,6 +6,12 @@
 <meta name="theme-color" content="#0a0817">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0817'/%3E%3Cpath d='M38 12 24 52' stroke='%23ff3d9a' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<style>
+.showcase{display:grid;grid-template-columns:.8fr 1.2fr;gap:50px;align-items:center}
+.vwrap{justify-self:center;width:min(300px,100%)}
+.vwrap video{display:block;width:100%;aspect-ratio:9/16;border-radius:28px;border:1px solid var(--line);background:#000;box-shadow:0 40px 90px -30px rgba(122,92,255,.55)}
+@media(max-width:860px){.showcase{grid-template-columns:1fr;gap:30px}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
@@ -42,6 +48,23 @@
         <div class="tag">visage suivi</div>
       </div>
       <div class="sub" id="demoSub" aria-hidden="true"></div>
+    </div>
+  </div>
+</div></section>
+
+<section id="video"><div class="wrap showcase">
+  <div class="vwrap">
+    <video controls playsinline preload="metadata" poster="pub-poster.jpg" aria-label="Vidéo de présentation de Snipzy">
+      <source src="pub-snipzy.mp4" type="video/mp4">
+      Ton navigateur ne peut pas lire cette vidéo.
+    </video>
+  </div>
+  <div>
+    <h2>Snipzy en 30 secondes</h2>
+    <p class="sect-lead">Une longue vidéo coupée en clips sous-titrés, cadrés sur ton visage et prêts à poster. Mets le son.</p>
+    <div class="cta">
+      <a class="btn" href="telecharger.html">Télécharger Snipzy</a>
+      <a class="btn ghost" href="#tarifs">Voir les tarifs</a>
     </div>
   </div>
 </div></section>
