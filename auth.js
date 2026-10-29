@@ -11,7 +11,7 @@
     invalid_credentials: "Email ou mot de passe incorrect.",
     email_not_confirmed: "Ton email n'est pas encore confirmé. Ouvre le mail que Snipzy t'a envoyé et clique sur le lien.",
     user_already_exists: "Un compte existe déjà avec cet email. Essaie de te connecter.",
-    weak_password: "Mot de passe trop faible. Prends au moins 8 caractères.",
+    weak_password: "Mot de passe trop faible. Prends au moins 10 caractères.",
     over_email_send_rate_limit: "Trop d'emails envoyés pour le moment. Réessaie dans une heure.",
     over_request_rate_limit: "Trop d'essais. Attends un peu avant de réessayer.",
     same_password: "Le nouveau mot de passe doit être différent de l'ancien.",

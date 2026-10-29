@@ -30,7 +30,7 @@
     e.preventDefault();
     var mail = $("suMail").value.trim(), pw = $("suPw").value;
     if (!/^\S+@\S+\.\S+$/.test(mail)) return say("Cet email n'a pas l'air valide.", false);
-    if (pw.length < 8) return say("Le mot de passe doit faire au moins 8 caractères.", false);
+    if (pw.length < 10) return say("Le mot de passe doit faire au moins 10 caractères.", false);
     if (!$("suOk").checked) return say("Coche la case pour accepter les conditions et la confidentialité.", false);
     busy(this, true); var f = this;
     A.signUp(mail, pw).then(function (r) {

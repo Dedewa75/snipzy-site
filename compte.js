@@ -33,7 +33,7 @@
   $("fPw").onsubmit = function (e) {
     e.preventDefault();
     var pw = $("npw").value;
-    if (pw.length < 8) return say("Le mot de passe doit faire au moins 8 caractères.", false);
+    if (pw.length < 10) return say("Le mot de passe doit faire au moins 10 caractères.", false);
     A.session().then(function (s) {
       if (!s) return say("Ta session a expiré. Reconnecte-toi.", false);
       return A.setPassword(s.access_token, pw).then(function () { $("fPw").reset(); say("Mot de passe changé.", true); });
