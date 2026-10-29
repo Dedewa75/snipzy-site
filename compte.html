@@ -36,7 +36,22 @@
     <tr><th>Formule</th><td id="cPlan"></td></tr>
     <tr><th>Compte créé le</th><td id="cDate"></td></tr>
   </table></div>
-  <p class="fine">Les abonnements Pro et Studio ne sont pas encore ouverts.</p>
+  <h2>Mon abonnement</h2>
+  <div id="subOn" hidden>
+    <p class="sect-lead" id="subInfo"></p>
+    <a class="btn ghost" id="portal" href="#" hidden rel="noopener">Gérer mon abonnement</a>
+  </div>
+  <div id="subOff" hidden>
+    <div class="toggle" role="group" aria-label="Facturation">
+      <button type="button" id="bM" aria-pressed="true">Mensuel</button>
+      <button type="button" id="bY" aria-pressed="false">Annuel</button>
+    </div>
+    <div class="plans2">
+      <div class="card"><h3>Pro</h3><p class="price2" id="pPro"></p><p>Vidéos illimitées, 1080p, sans filigrane.</p><a class="btn" id="buyPro" href="#">Choisir Pro</a></div>
+      <div class="card"><h3>Studio</h3><p class="price2" id="pStudio"></p><p>Tout Pro, sans limite de durée, 3 ordinateurs.</p><a class="btn" id="buyStudio" href="#">Choisir Studio</a></div>
+    </div>
+    <p class="fine" id="subNote"></p>
+  </div>
 
   <h2>Changer de mot de passe</h2>
   <form id="fPw" class="form" novalidate>

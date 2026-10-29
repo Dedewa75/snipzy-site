@@ -91,7 +91,7 @@
       return api("/auth/v1/logout", { method: "POST" }, token).then(null, function () {});
     },
     profile: function (token) {
-      return api("/rest/v1/profiles?select=plan,created_at", {}, token).then(function (r) { return r && r[0] || null; });
+      return api("/rest/v1/profiles?select=plan,created_at,plan_status,plan_period_end", {}, token).then(function (r) { return r && r[0] || null; });
     },
     deleteAccount: function (token) {
       return api("/rest/v1/rpc/delete_my_account", { method: "POST", body: {} }, token).then(function () { clear(); });
