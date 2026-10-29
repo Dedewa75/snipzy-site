@@ -28,19 +28,22 @@
     return base + (base.indexOf("?") < 0 ? "?" : "&") + "client_reference_id=" + encodeURIComponent(uid) +
       "&prefilled_email=" + encodeURIComponent(mail);
   }
+  function consentOk() { return $("ok1").checked && $("ok2").checked; }
   function drawBuy() {
     $("bM").setAttribute("aria-pressed", billing === "m" ? "true" : "false");
     $("bY").setAttribute("aria-pressed", billing === "y" ? "true" : "false");
     [["Pro", "pro"], ["Studio", "studio"]].forEach(function (x) {
       var key = x[1] + "_" + billing, a = $("buy" + x[0]), link = buyLink(key);
       $("p" + x[0]).textContent = PRICES[key];
-      if (link) { a.href = link; a.classList.remove("off"); a.textContent = "Choisir " + x[0]; }
+      if (link && consentOk()) { a.href = link; a.classList.remove("off"); a.textContent = "Choisir " + x[0]; }
+      else if (link) { a.href = "#"; a.classList.add("off"); a.textContent = "Choisir " + x[0]; }
       else { a.href = "#"; a.classList.add("off"); a.textContent = "Bientôt disponible"; }
     });
     $("subNote").textContent = (window.SNIPZY.links && window.SNIPZY.links.pro_m)
-      ? "Paiement sécurisé par Stripe. Tu peux résilier quand tu veux."
+      ? "Coche les deux cases pour continuer. Prix en euros, taxes comprises. Paiement sécurisé par Stripe. Tu peux résilier quand tu veux."
       : "Les abonnements Pro et Studio ne sont pas encore ouverts.";
   }
+  $("ok1").onchange = drawBuy; $("ok2").onchange = drawBuy;
   $("bM").onclick = function () { billing = "m"; drawBuy(); };
   $("bY").onclick = function () { billing = "y"; drawBuy(); };
 

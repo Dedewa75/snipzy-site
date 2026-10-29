@@ -165,3 +165,7 @@ footer a:hover,footer button.lnk:hover{color:var(--text);text-decoration:underli
 .price2{font-size:1.5rem;font-weight:800;color:var(--text)!important}
 .btn.off{opacity:.55;pointer-events:none}
 @media(max-width:600px){.plans2{grid-template-columns:1fr}}
+
+.consent{display:grid;gap:10px;margin:16px 0 6px}
+.consent label{display:flex;gap:10px;align-items:flex-start;color:#d9d4f5;font-size:.92rem;line-height:1.4}
+.consent input{margin-top:3px;flex:none;width:18px;height:18px}

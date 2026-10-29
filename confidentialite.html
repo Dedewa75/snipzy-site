@@ -23,31 +23,44 @@
 <main id="main">
 <div class="doc">
 <h1>Politique de confidentialité</h1>
-<div class="draft"><strong>Brouillon.</strong> Ce texte est un modèle de départ, pas un avis juridique. Il doit être complété et relu par un professionnel avant la mise en ligne du site.</div>
-<h2>Qui est responsable de tes données ?</h2>
+<div class="draft"><strong>Brouillon.</strong> Ce texte est une base de travail, pas un avis juridique. Il doit être relu par un professionnel avant l'ouverture des vrais paiements.</div>
+<h2>1. Qui est responsable de tes données ?</h2>
 <table>
 <tr><th>Nom ou dénomination</th><td><mark class="todo">[À COMPLÉTER]</mark></td></tr>
 <tr><th>Adresse</th><td><mark class="todo">[À COMPLÉTER : adresse en Belgique]</mark></td></tr>
 <tr><th>Numéro d'entreprise (BCE)</th><td><mark class="todo">[À COMPLÉTER]</mark></td></tr>
-<tr><th>Numéro de TVA</th><td><mark class="todo">[À COMPLÉTER s'il y en a un]</mark></td></tr>
+<tr><th>Numéro de TVA</th><td><mark class="todo">[À COMPLÉTER : s'il y en a un, sinon préciser la franchise de TVA]</mark></td></tr>
 <tr><th>Email de contact</th><td><mark class="todo">[À COMPLÉTER]</mark></td></tr>
 </table>
-<h2>Quelles données, pourquoi, et combien de temps ?</h2>
+<h2>2. Quelles données, pourquoi, et combien de temps ?</h2>
 <table>
-<tr><th>Donnée</th><th>Pourquoi</th><th>Durée</th></tr>
-<tr><td>Email et mot de passe (le mot de passe est stocké protégé, jamais en clair)</td><td>Créer et sécuriser ton compte</td><td>Tant que ton compte existe</td></tr>
-<tr><td>Abonnement et paiements (traités par notre prestataire de paiement : nous ne voyons ni ne gardons ton numéro de carte)</td><td>Gérer ton abonnement, la facturation et les obligations comptables</td><td><mark class="todo">[À COMPLÉTER avec le comptable : durée légale de conservation]</mark></td></tr>
-<tr><td>Nombre de minutes utilisées et appareils liés à ton compte</td><td>Appliquer les limites de ta formule</td><td>Tant que ton compte existe</td></tr>
-<tr><td>Données techniques de connexion (adresse IP, date)</td><td>Sécurité et prévention des abus</td><td><mark class="todo">[À COMPLÉTER]</mark></td></tr>
+<tr><th>Donnée</th><th>Pourquoi</th><th>Base légale</th><th>Durée</th></tr>
+<tr><td>E-mail et mot de passe (le mot de passe est stocké protégé, jamais en clair)</td><td>Créer et sécuriser ton compte</td><td>Exécution du contrat</td><td>Tant que ton compte existe</td></tr>
+<tr><td>Formule, état et date de fin de l'abonnement, identifiants client et abonnement chez Stripe</td><td>Gérer ton abonnement</td><td>Exécution du contrat</td><td>Tant que ton compte existe</td></tr>
+<tr><td>Paiements et factures (numéro de carte traité uniquement par Stripe)</td><td>Facturation et obligations comptables</td><td>Obligation légale</td><td><mark class="todo">[À COMPLÉTER : durée légale de conservation des pièces comptables en Belgique, à confirmer avec le guichet d'entreprises ou le comptable]</mark></td></tr>
+<tr><td>Minutes utilisées et ordinateurs liés au compte (quand l'application sera connectée)</td><td>Appliquer les limites de ta formule</td><td>Exécution du contrat</td><td>Tant que ton compte existe</td></tr>
+<tr><td>Données techniques de connexion (adresse IP, date)</td><td>Sécurité et prévention des abus</td><td>Intérêt légitime</td><td><mark class="todo">[À COMPLÉTER : ex. 12 mois]</mark></td></tr>
+<tr><td>Ton message, si tu nous écris</td><td>Te répondre</td><td>Intérêt légitime</td><td><mark class="todo">[À COMPLÉTER : ex. 12 mois]</mark></td></tr>
 </table>
-<h2>Tes vidéos</h2>
+<h2>3. Tes vidéos</h2>
 <p>Le traitement de tes vidéos se fait sur ton ordinateur. Elles ne sont pas envoyées à nos serveurs.</p>
-<h2>Avec qui partageons-nous des données ?</h2>
-<p>Avec les prestataires nécessaires au service : hébergement du site, gestion des comptes, paiement. <mark class="todo">[À COMPLÉTER : noms des prestataires une fois choisis]</mark> Nous ne vendons pas tes données.</p>
-<h2>Cookies</h2>
+<h2>4. Avec qui partageons-nous des données ?</h2>
+<p>Seulement avec les prestataires nécessaires au service. Nous ne vendons pas tes données.</p>
+<table>
+<tr><th>Prestataire</th><th>Rôle</th><th>Données concernées</th><th>Localisation</th></tr>
+<tr><td>Supabase</td><td>Comptes, connexion, base de données</td><td>E-mail, mot de passe protégé, formule, abonnement</td><td>Londres (Royaume-Uni)</td></tr>
+<tr><td>Stripe</td><td>Paiement et gestion des abonnements</td><td>E-mail, données de paiement, identifiant client</td><td>Union européenne et États-Unis (clauses contractuelles types) <mark class="todo">[À COMPLÉTER : à vérifier]</mark></td></tr>
+<tr><td>Render</td><td>Hébergement du site</td><td>Adresse IP et journaux techniques d'accès</td><td><mark class="todo">[À COMPLÉTER : à vérifier]</mark></td></tr>
+</table>
+<p>Certains de ces prestataires peuvent traiter des données en dehors de l'Espace économique européen. Dans ce cas, des garanties appropriées (comme les clauses contractuelles types de la Commission européenne ou une décision d'adéquation) doivent s'appliquer. <mark class="todo">[À COMPLÉTER : liste et garanties exactes à vérifier avec un professionnel]</mark></p>
+<h2>5. Cookies et stockage local</h2>
 <p>Voir la page <a href="cookies.html">Cookies</a>.</p>
-<h2>Tes droits</h2>
-<p>Tu peux demander l'accès à tes données, leur correction, leur effacement, la limitation de leur utilisation, leur portabilité, ou t'opposer à leur traitement, en écrivant à l'adresse de contact ci-dessus. Tu peux aussi introduire une plainte auprès de l'Autorité de protection des données (Belgique).</p>
+<h2>6. Sécurité</h2>
+<p>Les échanges avec le site sont chiffrés (HTTPS). Les mots de passe sont stockés sous forme protégée. L'accès à tes données est limité par des règles de sécurité sur la base de données : chacun ne peut lire que son propre profil.</p>
+<h2>7. Tes droits</h2>
+<p>Tu peux demander l'accès à tes données, leur correction, leur effacement, la limitation de leur utilisation, leur portabilité, ou t'opposer à leur traitement, en écrivant à l'adresse de contact ci-dessus. Tu peux supprimer ton compte et tes données toi-même depuis la page <a href="compte.html">Mon compte</a> : certaines données de facturation doivent toutefois être conservées pour respecter la loi. Tu peux aussi introduire une plainte auprès de l'Autorité de protection des données (Belgique) : <a href="https://www.autoriteprotectiondonnees.be" rel="noopener">autoriteprotectiondonnees.be</a>.</p>
+<h2>8. Mineurs</h2>
+<p>Le service n'est pas destiné aux personnes sous l'âge minimum indiqué dans les conditions d'utilisation.</p>
 <p><small>Dernière mise à jour : <mark class="todo">[À COMPLÉTER]</mark></small></p>
 </div>
 
@@ -56,6 +69,7 @@
   <span>© <span id="yr">2026</span> Snipzy</span>
   <nav aria-label="Pages légales">
     <a href="confidentialite.html">Confidentialité</a>
+    <a href="mentions-legales.html">Mentions légales</a>
     <a href="conditions.html">Conditions d'utilisation</a>
     <a href="cookies.html">Cookies</a>
     <button type="button" class="lnk" id="cookie-reopen">Gérer les cookies</button>
