@@ -8,6 +8,6 @@ window.SNIPZY = {
     pro_y: "https://buy.stripe.com/test_dRm8wI5IDghj0B0gnV2Fa01",
     studio_m: "https://buy.stripe.com/test_eVq7sE8UP5CF0B0b3B2Fa02",
     studio_y: "https://buy.stripe.com/test_aFa9AM0oj2qtcjIdbJ2Fa03",
-    portal: ""
+    portal: "https://billing.stripe.com/p/login/test_14A00cef90ilerQb3B2Fa00"
   }
 };
