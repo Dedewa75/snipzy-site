@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Connexion - Snipzy</title>
+<meta name="description" content="Connecte-toi ou crée ton compte Snipzy.">
+<meta name="theme-color" content="#0a0817">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0817'/%3E%3Cpath d='M38 12 24 52' stroke='%23ff3d9a' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Snipzy, accueil">snip<i>/</i>zy</a>
+  <div class="links">
+    <a class="l" href="index.html#fonctions">Fonctions</a>
+    <a class="l" href="index.html#tarifs">Tarifs</a>
+    <a class="l" href="index.html#faq">Questions</a>
+    <a class="l keep" id="navAcc" href="connexion.html">Connexion</a>
+    <a class="btn small" href="telecharger.html">Télécharger</a>
+  </div>
+</div></header>
+<main id="main">
+<div class="auth">
+<h1>Ton compte Snipzy</h1>
+<p class="sect-lead">Gratuit, avec ton adresse email. Tes vidéos restent sur ton ordinateur.</p>
+<div class="toggle" role="tablist" aria-label="Choix"><button type="button" role="tab" id="tabLogin" aria-pressed="true">Se connecter</button><button type="button" role="tab" id="tabSignup" aria-pressed="false">Créer un compte</button></div>
+
+<form id="fLogin" class="form" novalidate>
+  <label for="liMail">Email</label>
+  <input id="liMail" type="email" autocomplete="email" required>
+  <label for="liPw">Mot de passe</label>
+  <input id="liPw" type="password" autocomplete="current-password" required>
+  <button class="btn" type="submit">Se connecter</button>
+  <p><button type="button" class="lnk2" id="forgot">Mot de passe oublié ?</button></p>
+</form>
+
+<form id="fSignup" class="form" novalidate hidden>
+  <label for="suMail">Email</label>
+  <input id="suMail" type="email" autocomplete="email" required>
+  <label for="suPw">Mot de passe (8 caractères minimum)</label>
+  <input id="suPw" type="password" autocomplete="new-password" minlength="8" required>
+  <label class="chk"><input id="suOk" type="checkbox"> <span>J'ai lu les <a href="conditions.html">conditions d'utilisation</a> et la <a href="confidentialite.html">politique de confidentialité</a>.</span></label>
+  <button class="btn" type="submit">Créer mon compte</button>
+</form>
+
+<div id="msg" class="msg" role="status" aria-live="polite" hidden></div>
+</div>
+</main>
+<footer><div class="wrap">
+  <span>© <span id="yr">2026</span> Snipzy</span>
+  <nav aria-label="Pages légales">
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="conditions.html">Conditions d'utilisation</a>
+    <a href="cookies.html">Cookies</a>
+    <button type="button" class="lnk" id="cookie-reopen">Gérer les cookies</button>
+  </nav>
+</div></footer>
+
+<div id="cookie" role="dialog" aria-label="Choix des cookies" hidden>
+  <p>Snipzy n'utilise aucun cookie de suivi ni de publicité sans ton accord. Si tu acceptes, des publicités pourront s'afficher sur le site plus tard. Ton choix est enregistré sur ton appareil et tu peux le changer à tout moment. <a href="cookies.html">En savoir plus</a></p>
+  <div class="row">
+    <button type="button" class="btn ghost" id="cookie-refuse">Tout refuser</button>
+    <button type="button" class="btn ghost" id="cookie-accept">Tout accepter</button>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="connexion.js"></script>
+<script src="site.js"></script>
+</body></html>

@@ -25,6 +25,11 @@
   if (reopen) reopen.onclick = showBar;
   /* Plus tard : si readConsent().ads === true, c'est ici qu'on chargera le script publicitaire. */
 
+
+  /* ---- lien Connexion / Mon compte dans le menu ---- */
+  var acc = document.getElementById("navAcc");
+  if (acc) { try { if (localStorage.getItem("snipzy_session")) { acc.textContent = "Mon compte"; acc.href = "compte.html"; } } catch (e) {} }
+
   /* ---- téléphone de démonstration ---- */
   var sub = document.getElementById("demoSub");
   if (sub) {

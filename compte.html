@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mon compte - Snipzy</title>
+<meta name="description" content="Ton compte Snipzy.">
+<meta name="theme-color" content="#0a0817">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0817'/%3E%3Cpath d='M38 12 24 52' stroke='%23ff3d9a' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<header class="nav"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="Snipzy, accueil">snip<i>/</i>zy</a>
+  <div class="links">
+    <a class="l" href="index.html#fonctions">Fonctions</a>
+    <a class="l" href="index.html#tarifs">Tarifs</a>
+    <a class="l" href="index.html#faq">Questions</a>
+    <a class="l keep" id="navAcc" href="connexion.html">Connexion</a>
+    <a class="btn small" href="telecharger.html">Télécharger</a>
+  </div>
+</div></header>
+<main id="main">
+<div class="auth">
+<h1>Mon compte</h1>
+<div id="wait" class="msg">Chargement…</div>
+
+<div id="boxOut" hidden>
+  <p class="sect-lead">Tu n'es pas connecté.</p>
+  <a class="btn" href="connexion.html">Se connecter</a>
+</div>
+
+<div id="boxIn" hidden>
+  <div class="card"><table class="kv">
+    <tr><th>Email</th><td id="cMail"></td></tr>
+    <tr><th>Formule</th><td id="cPlan"></td></tr>
+    <tr><th>Compte créé le</th><td id="cDate"></td></tr>
+  </table></div>
+  <p class="fine">Les abonnements Pro et Studio ne sont pas encore ouverts.</p>
+
+  <h2>Changer de mot de passe</h2>
+  <form id="fPw" class="form" novalidate>
+    <label for="npw">Nouveau mot de passe (8 caractères minimum)</label>
+    <input id="npw" type="password" autocomplete="new-password" minlength="8" required>
+    <button class="btn" type="submit">Enregistrer</button>
+  </form>
+
+  <div class="cta" style="margin-top:28px">
+    <button class="btn ghost" type="button" id="logout">Se déconnecter</button>
+  </div>
+
+  <h2>Supprimer mon compte</h2>
+  <p class="sect-lead">Ton compte et tes données sont effacés définitivement. Cette action est irréversible.</p>
+  <button class="btn ghost danger" type="button" id="del">Supprimer mon compte</button>
+</div>
+
+<div id="msg" class="msg" role="status" aria-live="polite" hidden></div>
+</div>
+</main>
+<footer><div class="wrap">
+  <span>© <span id="yr">2026</span> Snipzy</span>
+  <nav aria-label="Pages légales">
+    <a href="confidentialite.html">Confidentialité</a>
+    <a href="conditions.html">Conditions d'utilisation</a>
+    <a href="cookies.html">Cookies</a>
+    <button type="button" class="lnk" id="cookie-reopen">Gérer les cookies</button>
+  </nav>
+</div></footer>
+
+<div id="cookie" role="dialog" aria-label="Choix des cookies" hidden>
+  <p>Snipzy n'utilise aucun cookie de suivi ni de publicité sans ton accord. Si tu acceptes, des publicités pourront s'afficher sur le site plus tard. Ton choix est enregistré sur ton appareil et tu peux le changer à tout moment. <a href="cookies.html">En savoir plus</a></p>
+  <div class="row">
+    <button type="button" class="btn ghost" id="cookie-refuse">Tout refuser</button>
+    <button type="button" class="btn ghost" id="cookie-accept">Tout accepter</button>
+  </div>
+</div>
+<script src="config.js"></script>
+<script src="auth.js"></script>
+<script src="compte.js"></script>
+<script src="site.js"></script>
+</body></html>
