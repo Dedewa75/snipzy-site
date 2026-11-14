@@ -2,11 +2,24 @@
 <html lang="fr"><head><meta charset="utf-8">
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self'; font-src 'self'; connect-src 'self' https://lhloyuasymrsghwwcomt.supabase.co; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Télécharger Snipzy</title>
-<meta name="description" content="L'application Snipzy pour Windows arrive bientôt.">
+<title>Télécharger Snipzy pour Windows</title>
+<meta name="description" content="Télécharge Snipzy pour Windows : transforme tes longues vidéos en clips courts sous-titrés, avec montage intelligent pour les jeux.">
 <meta name="theme-color" content="#0a0817">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0817'/%3E%3Cpath d='M38 12 24 52' stroke='%23ff3d9a' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
+<style>
+.kick{display:inline-block;margin:0 0 10px;padding:.3rem .9rem;border:1px solid var(--line);border-radius:999px;color:var(--cyan);font-weight:700;font-size:.85rem}
+.btn.big{font-size:1.15rem;padding:1.05rem 2rem;gap:.7rem;margin-top:8px}
+.dl .card h3{margin:0 0 10px}
+.dl .card ul{margin:0;padding-left:20px;color:var(--mute)}
+.dl .card li{margin:6px 0}
+.how{margin:0;padding-left:22px;color:var(--mute)}
+.how li{margin:9px 0}
+.how b,.dl .card li b{color:var(--text)}
+details{border-top:1px solid var(--line);padding:10px 0}
+details:first-of-type{border-top:0}
+summary{cursor:pointer;font-weight:700}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
@@ -22,20 +35,57 @@
 </div></header>
 <main id="main">
 <div class="dl">
-  <h1>Télécharger Snipzy</h1>
-  <p class="lead" style="margin-inline:auto">L'application pour Windows arrive bientôt.</p>
-  <a class="btn" href="#" aria-disabled="true" role="button">Téléchargement bientôt disponible</a>
+  <p class="kick">Pour Windows 10 et 11</p>
+  <h1>Télécharge Snipzy</h1>
+  <p class="lead" style="margin-inline:auto">Transforme tes longues vidéos en clips courts sous-titrés pour Shorts, TikTok et Reels. Tout se passe sur ton PC.</p>
+  <a class="btn big" id="dlBtn" href="https://github.com/Dedewa75/snipzy-site/releases/latest/download/Snipzy-Setup.exe" download>
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></svg>
+    Télécharger pour Windows
+  </a>
+  <p class="fine">Fichier d'installation <b>Snipzy-Setup.exe</b> · gratuit à installer · Windows 10 ou 11</p>
+
   <div class="card">
-    <h3>Ce qu'il faudra</h3>
+    <h3>Installer en 4 étapes</h3>
+    <ol class="how">
+      <li><b>Télécharge</b> le fichier avec le bouton ci-dessus.</li>
+      <li><b>Double-clique</b> sur <i>Snipzy-Setup.exe</i> (dans ton dossier Téléchargements).</li>
+      <li>Si Windows affiche « Windows a protégé votre ordinateur » : clique sur <b>Informations complémentaires</b>, puis sur <b>Exécuter quand même</b>.</li>
+      <li>Clique sur <b>Suivant</b> jusqu'à la fin, puis ouvre <b>Snipzy</b> depuis le Bureau ou le menu Démarrer.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3>Ce que tu trouves dans l'application</h3>
+    <ul>
+      <li><b>Clips</b> : ta longue vidéo est découpée en clips qui se suivent, avec sous-titres animés (mot surligné), titre et hashtags prêts à copier.</li>
+      <li><b>Montage intelligent</b> : cadrage vertical des jeux avec facecam (SmartFrame AI), choix automatique des moments forts d'après le volume et la parole, sous-titres qui mettent les mots forts en avant.</li>
+      <li>Les clips sortent en 9:16, 1:1 ou 16:9, en HD 1080p.</li>
+    </ul>
+    <p>Le montage intelligent mesure le volume, la parole et le mouvement à l'écran : il ne comprend pas le sens de ta vidéo. Vérifie toujours tes clips avant de les publier.</p>
+  </div>
+
+  <div class="card">
+    <h3>Ce qu'il faut</h3>
     <ul>
       <li>Windows 10 ou 11</li>
       <li>8 Go de mémoire, 16 Go recommandés pour les longues vidéos</li>
-      <li>Quelques Go d'espace libre pour l'application et les modèles de transcription</li>
-      <li>Une connexion internet pour te connecter à ton compte</li>
+      <li>Quelques Go d'espace libre pour l'application et le modèle de transcription (téléchargé au premier lancement)</li>
+      <li>Une connexion internet au premier lancement</li>
+      <li>Pas de carte graphique nécessaire : un PC classique suffit, c'est juste plus lent sur les longues vidéos</li>
     </ul>
-    <p><mark class="todo">[À COMPLÉTER : adresse email ou formulaire pour être prévenu de la sortie]</mark></p>
   </div>
-  <p class="fine">Au premier lancement, Windows peut afficher un avertissement « éditeur inconnu » tant que l'application n'est pas signée. On te l'expliquera ici le moment venu.</p>
+
+  <div class="card">
+    <h3>Mettre à jour</h3>
+    <p>Télécharge la dernière version ici et installe-la par-dessus l'ancienne. Pas besoin de désinstaller : tes réglages sont gardés.</p>
+  </div>
+
+  <div class="card">
+    <h3>Questions</h3>
+    <details><summary>Pourquoi Windows affiche un avertissement ?</summary><p>Snipzy n'est pas encore signé numériquement : Windows ne connaît pas encore l'éditeur et prévient par précaution. Les étapes ci-dessus te permettent de continuer. Télécharge toujours Snipzy depuis cette page uniquement.</p></details>
+    <details><summary>Mes vidéos sont-elles envoyées sur internet ?</summary><p>Non. Les vidéos sont traitées sur ton PC et les clips sont créés sur ton PC. Internet sert au premier lancement (téléchargement du modèle de transcription et de détection).</p></details>
+    <details><summary>Le téléchargement ne démarre pas</summary><p>Réessaie dans une minute. Si ça ne marche toujours pas, écris-nous avec la page ou le message d'erreur que tu vois.</p></details>
+  </div>
 </div>
 
 </main>
