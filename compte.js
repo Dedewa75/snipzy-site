@@ -20,7 +20,7 @@
   }
 
   var billing = "m", uid = "", mail = "";
-  var PRICES = { pro_m: "8,99 € / mois", pro_y: "59 € / an", studio_m: "19,99 € / mois", studio_y: "149 € / an" };
+  var PRICES = { pro_m: "4,99 € / mois", pro_y: "59 € / an", studio_m: "19,99 € / mois", studio_y: "149 € / an" };
 
   function buyLink(key) {
     var base = (window.SNIPZY.links || {})[key];
